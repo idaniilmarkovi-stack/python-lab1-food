@@ -335,13 +335,13 @@ def normalize_units(df: pd.DataFrame, stats: Stats) -> pd.DataFrame:
     pw = df["package_weight"]
     df["package_weight_g"] = _cat_to_float(pw, _first_number(_RE_G)).astype("float32")
     df["package_weight_ml"] = _cat_to_float(pw, _first_number(_RE_ML)).astype("float32")
-    # вес или объём упаковки <= 0 (например «0 g») - скрытый пропуск, а не измерение
-    zero_w = int((df["package_weight_g"] <= 0).sum() + (df["package_weight_ml"] <= 0).sum())
+    # вес или объём упаковки <= 0 (или микроскопические значения при округлении) - скрытый пропуск
+    zero_w = int((df["package_weight_g"] <= 1e-4).sum() + (df["package_weight_ml"] <= 1e-4).sum())
     for c in ("package_weight_g", "package_weight_ml"):
-        df.loc[df[c] <= 0, c] = np.float32("nan")
-    # аналогично для порции в единой шкале (страховка: после пересчёта единиц)
-    zero_s = int((df["serving_size_std"] <= 0).sum())
-    df.loc[df["serving_size_std"] <= 0, "serving_size_std"] = np.float32("nan")
+        df.loc[df[c] <= 1e-4, c] = np.float32("nan")
+    # аналогично для порции в единой шкале (страховка: после пересчёта единиц в г/мл)
+    zero_s = int((df["serving_size_std"] <= 1e-4).sum())
+    df.loc[df["serving_size_std"] <= 1e-4, "serving_size_std"] = np.float32("nan")
     conv = int((df["serving_unit_std"].notna() & df["serving_unit_std"].ne(df["serving_size_unit"].astype(object))).sum())
     stats.add("normalize_units", len(df), changed=conv,
               note=f"serving_size_std задан у {int(df['serving_size_std'].notna().sum())} строк; "
@@ -349,6 +349,7 @@ def normalize_units(df: pd.DataFrame, stats: Stats) -> pd.DataFrame:
                    f"package_weight_ml у {int(df['package_weight_ml'].notna().sum())}; "
                    f"нулевых значений заменено на NA: вес/объём {zero_w}, порция {zero_s}")
     return df
+
 
 
 def check_domain(df: pd.DataFrame, stats: Stats, today: pd.Timestamp | None = None) -> pd.DataFrame:
