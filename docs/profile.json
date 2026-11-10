@@ -1,0 +1,1277 @@
+{
+ "file_size_bytes": 933035951,
+ "encoding_guess": "utf-8",
+ "header": [
+  "fdc_id",
+  "brand_owner",
+  "brand_name",
+  "subbrand_name",
+  "gtin_upc",
+  "ingredients",
+  "not_a_significant_source_of",
+  "serving_size",
+  "serving_size_unit",
+  "household_serving_fulltext",
+  "branded_food_category",
+  "data_source",
+  "package_weight",
+  "modified_date",
+  "available_date",
+  "market_country",
+  "discontinued_date",
+  "preparation_state_code",
+  "trade_channel",
+  "short_description",
+  "material_code"
+ ],
+ "n_columns": 21,
+ "n_rows": 1981655,
+ "rows_with_wrong_field_count": 0,
+ "full_duplicate_rows": 0,
+ "key_column_checked": "fdc_id",
+ "key_duplicates": 0,
+ "columns": {
+  "fdc_id": {
+   "empty": 0,
+   "empty_pct": 0.0,
+   "distinct": 1981655,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 0,
+   "max_len": 7,
+   "min": 344604.0,
+   "max": 2721949.0,
+   "non_numeric": 0,
+   "le_zero": 0
+  },
+  "brand_owner": {
+   "empty": 17238,
+   "empty_pct": 0.87,
+   "distinct": 37054,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 79611,
+   "double_spaces": 3544,
+   "html_like": 0,
+   "all_uppercase_values": 148075,
+   "max_len": 78,
+   "top_values": [
+    [
+     "Wal-Mart Stores, Inc.",
+     46915
+    ],
+    [
+     "Target Stores",
+     44306
+    ],
+    [
+     "Meijer, Inc.",
+     31231
+    ],
+    [
+     "Safeway, Inc.",
+     29484
+    ],
+    [
+     "GENERAL MILLS SALES INC.",
+     26929
+    ],
+    [
+     "Topco Associates, Inc.",
+     26163
+    ],
+    [
+     "The Kroger Co.",
+     23636
+    ],
+    [
+     "Hy-Vee, Inc.",
+     23176
+    ],
+    [
+     "Supervalu, Inc.",
+     18256
+    ],
+    [
+     "Whole Foods Market, Inc.",
+     16775
+    ],
+    [
+     "Wakefern Food Corporation",
+     16582
+    ],
+    [
+     "Wegmans Food Markets, Inc. ",
+     15730
+    ],
+    [
+     "Giant Eagle, Inc.",
+     15210
+    ],
+    [
+     "Harris-Teeter Inc.",
+     15141
+    ],
+    [
+     "Nash Finch Company",
+     14666
+    ],
+    [
+     "CAMPBELL SOUP COMPANY",
+     14110
+    ],
+    [
+     "Tops Markets, LLC",
+     13715
+    ],
+    [
+     "Weis Markets, Inc.",
+     12554
+    ],
+    [
+     "Associated Wholesale Grocers, Inc.",
+     12392
+    ],
+    [
+     "Schnuck Markets, Inc.",
+     12341
+    ],
+    [
+     "Kraft Heinz Foods Company",
+     12211
+    ],
+    [
+     "Pinnacle Foods Group LLC",
+     11734
+    ],
+    [
+     "Raley's",
+     11129
+    ],
+    [
+     "Ahold USA, Inc. ",
+     11032
+    ],
+    [
+     "Nestle USA Inc.",
+     10420
+    ]
+   ]
+  },
+  "brand_name": {
+   "empty": 546344,
+   "empty_pct": 27.57,
+   "distinct": 36250,
+   "suspicious_placeholders": {
+    "n/a": 411,
+    "nan": 52,
+    "na": 1
+   },
+   "edge_whitespace": 304,
+   "double_spaces": 113,
+   "html_like": 0,
+   "all_uppercase_values": 1362708,
+   "max_len": 59,
+   "top_values": [
+    [
+     "MEIJER",
+     23157
+    ],
+    [
+     "GREAT VALUE",
+     21217
+    ],
+    [
+     "WEGMANS",
+     17195
+    ],
+    [
+     "SIGNATURE SELECT",
+     13598
+    ],
+    [
+     "SHOPRITE",
+     12390
+    ],
+    [
+     "HY-VEE",
+     11869
+    ],
+    [
+     "AHOLD",
+     11542
+    ],
+    [
+     "GOOD & GATHER",
+     10219
+    ],
+    [
+     "TOPS",
+     9712
+    ],
+    [
+     "MARKET PANTRY",
+     9388
+    ],
+    [
+     "GIANT EAGLE",
+     9246
+    ],
+    [
+     "KROGER",
+     8956
+    ],
+    [
+     "FOOD CLUB",
+     8894
+    ],
+    [
+     "ESSENTIAL EVERYDAY",
+     8873
+    ],
+    [
+     "OUR FAMILY",
+     8858
+    ],
+    [
+     "HARRIS TEETER",
+     8744
+    ],
+    [
+     "SCHNUCKS",
+     8196
+    ],
+    [
+     "RALEY'S",
+     7589
+    ],
+    [
+     "FIRST STREET",
+     7429
+    ],
+    [
+     "BEST CHOICE",
+     7030
+    ],
+    [
+     "FOOD LION",
+     6651
+    ],
+    [
+     "ARCHER FARMS",
+     6607
+    ],
+    [
+     "CAMPBELL'S",
+     6584
+    ],
+    [
+     "BIG Y",
+     6457
+    ],
+    [
+     "HANNAFORD",
+     6439
+    ]
+   ]
+  },
+  "subbrand_name": {
+   "empty": 1875892,
+   "empty_pct": 94.663,
+   "distinct": 8397,
+   "suspicious_placeholders": {
+    "na": 3
+   },
+   "edge_whitespace": 126,
+   "double_spaces": 1,
+   "html_like": 0,
+   "all_uppercase_values": 102674,
+   "max_len": 64,
+   "top_values": [
+    [
+     "ORGANIC",
+     12510
+    ],
+    [
+     "BOWL & BASKET",
+     5086
+    ],
+    [
+     "TRUE GOODNESS",
+     1574
+    ],
+    [
+     "ORGANICS",
+     1501
+    ],
+    [
+     "FRESH",
+     1420
+    ],
+    [
+     "SELECT INGREDIENTS",
+     1358
+    ],
+    [
+     "BAKERY",
+     1349
+    ],
+    [
+     "DAIRY FARMS",
+     1327
+    ],
+    [
+     "CHUNKY",
+     1285
+    ],
+    [
+     "WHOLESOME PANTRY",
+     1128
+    ],
+    [
+     "CONDENSED",
+     915
+    ],
+    [
+     "FSDCHG",
+     728
+    ],
+    [
+     "SIGNATURE",
+     678
+    ],
+    [
+     "NATURALS",
+     670
+    ],
+    [
+     "FREDERIK'S",
+     664
+    ],
+    [
+     "NATURE'S PROMISE",
+     611
+    ],
+    [
+     "SPLASH",
+     495
+    ],
+    [
+     "MEAL SIMPLE",
+     480
+    ],
+    [
+     "ZERO",
+     431
+    ],
+    [
+     "LINDOR",
+     425
+    ],
+    [
+     "STEAMFRESH",
+     422
+    ],
+    [
+     "GOLDFISH",
+     421
+    ],
+    [
+     "REAL FOOD",
+     409
+    ],
+    [
+     "SELECT",
+     393
+    ],
+    [
+     "KIDS",
+     375
+    ]
+   ]
+  },
+  "gtin_upc": {
+   "empty": 0,
+   "empty_pct": 0.0,
+   "distinct": 462387,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 6,
+   "max_len": 18
+  },
+  "ingredients": {
+   "empty": 5371,
+   "empty_pct": 0.271,
+   "distinct": 396225,
+   "suspicious_placeholders": {
+    "na": 5,
+    "none": 1
+   },
+   "edge_whitespace": 17290,
+   "double_spaces": 16779,
+   "html_like": 371,
+   "all_uppercase_values": 1897754,
+   "max_len": 5844
+  },
+  "not_a_significant_source_of": {
+   "empty": 1901677,
+   "empty_pct": 95.964,
+   "distinct": 10273,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 347,
+   "double_spaces": 65,
+   "html_like": 0,
+   "all_uppercase_values": 42868,
+   "max_len": 306,
+   "top_values": [
+    [
+     "NOT A SIGNIFICANT SOURCE OF SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, VITAMIN D, CALCIUM, IRON AND POTASSIUM.",
+     3183
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF CALORIES FROM FAT, SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, VITAMIN A, VITAMIN C, CALCIUM AND IRON.",
+     2383
+    ],
+    [
+     "Not a significant source of saturated fat, trans fat, cholesterol, dietary fiber, vitamin D, calcium, iron and potassium.",
+     1573
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, VITAMIN D, CALCIUM AND IRON.",
+     1223
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, VITAMIN D, CALCIUM, IRON, AND POTASSIUM.",
+     1165
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF OTHER NUTRIENTS.",
+     1113
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, TOTAL SUGARS, ADDED SUGARS, VITAMIN D, CALCIUM, IRON AND POTASSIUM.",
+     1059
+    ],
+    [
+     "Not a significant source of saturated fat, trans fat, cholesterol, dietary fiber, vitamin D, calcium, iron, and potassium.",
+     978
+    ],
+    [
+     "Not a significant source of added sugars.",
+     732
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF CALORIES FROM FAT, SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, VITAMIN A, VITAMIN C, CALCIUM, AND IRON.",
+     631
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF CALORIES FROM FAT, SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, VITAMIN A, CALCIUM AND IRON.",
+     615
+    ],
+    [
+     "Not a significant source of saturated fat, trans fat, cholesterol,dietary fiber, vitamin D, calcium, iron and potassium.",
+     603
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF DIETARY FIBER, SUGARS, VITAMIN A, VITAMIN C, CALCIUM AND IRON.",
+     597
+    ],
+    [
+     "Not a significant source of other nutrients.",
+     558
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, VITAMIN D, CALCIUM, AND IRON.",
+     543
+    ],
+    [
+     "Not a significant source of saturated fat, trans fat, cholesterol,dietary fiber, vitamin D, calcium, iron, and potassium.",
+     525
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, TOTAL SUGARS, ADDED SUGARS, VITAMIN D, CALCIUM, IRON, AND POTASSIUM.",
+     490
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF CALORIES FROM FAT, SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, SUGARS, VITAMIN A, VITAMIN C, CALCIUM AND IRON.",
+     463
+    ],
+    [
+     "Not a significant source of saturated fat, trans fat, cholesterol, dietary fiber, total sugars, added sugars, vitamin D, calcium, iron and potassium.",
+     388
+    ],
+    [
+     "Not a significant source of saturated fat, trans fat,cholesterol, dietary fiber, vitamin D, calcium, ironand potassium.",
+     381
+    ],
+    [
+     "Not a significant source of saturated fat, trans fat,cholesterol, dietary fiber, vitamin D, calcium, iron andpotassium.",
+     347
+    ],
+    [
+     "Not a significant source of saturated fat,trans fat, cholesterol, dietary fiber,vitamin D, calcium, iron, and potassium.",
+     325
+    ],
+    [
+     "Not a significant source of saturated fat,trans fat, cholesterol, dietary fiber, vitaminD, calcium, iron and potassium.",
+     324
+    ],
+    [
+     "NOT A SIGNIFICANT SOURCE OF SATURATED FAT, TRANS FAT, CHOLESTEROL, DIETARY FIBER, VITAMIN A, VITAMIN C, CALCIUM AND IRON.",
+     318
+    ],
+    [
+     "Not a significant source of saturated fat, trans fat,cholesterol, dietary fiber, vitamin D, calcium, and iron.",
+     306
+    ]
+   ]
+  },
+  "serving_size": {
+   "empty": 10753,
+   "empty_pct": 0.543,
+   "distinct": 2378,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 2,
+   "max_len": 20,
+   "min": 0.0,
+   "max": 256113168.0,
+   "non_numeric": 0,
+   "le_zero": 268
+  },
+  "serving_size_unit": {
+   "empty": 18993,
+   "empty_pct": 0.958,
+   "distinct": 8,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 207719,
+   "max_len": 3,
+   "top_values": [
+    [
+     "g",
+     1512891
+    ],
+    [
+     "ml",
+     242052
+    ],
+    [
+     "GRM",
+     169301
+    ],
+    [
+     "MLT",
+     26791
+    ],
+    [
+     "MG",
+     7552
+    ],
+    [
+     "IU",
+     3667
+    ],
+    [
+     "GM",
+     345
+    ],
+    [
+     "MC",
+     63
+    ]
+   ]
+  },
+  "household_serving_fulltext": {
+   "empty": 1080558,
+   "empty_pct": 54.528,
+   "distinct": 29315,
+   "suspicious_placeholders": {
+    "none": 618,
+    "n/a": 168,
+    "0": 3
+   },
+   "edge_whitespace": 348,
+   "double_spaces": 3999,
+   "html_like": 0,
+   "all_uppercase_values": 364859,
+   "max_len": 174,
+   "top_values": [
+    [
+     "1 ONZ",
+     44406
+    ],
+    [
+     "2 Tbsp",
+     44311
+    ],
+    [
+     "1 cup",
+     40870
+    ],
+    [
+     "1 Tbsp",
+     34713
+    ],
+    [
+     "1/2 cup",
+     31288
+    ],
+    [
+     "1/4 cup",
+     24697
+    ],
+    [
+     "0.5 cup",
+     21219
+    ],
+    [
+     "8 OZA",
+     20741
+    ],
+    [
+     "2 ONZ",
+     15411
+    ],
+    [
+     "0.25 cup",
+     15266
+    ],
+    [
+     "2/3 cup",
+     13153
+    ],
+    [
+     "1 BAR",
+     13128
+    ],
+    [
+     "1 tsp",
+     11424
+    ],
+    [
+     "12 OZA",
+     9274
+    ],
+    [
+     "1 SLICE",
+     9223
+    ],
+    [
+     "4 ONZ",
+     8998
+    ],
+    [
+     "Amount per serving",
+     8924
+    ],
+    [
+     "1 CONTAINER",
+     7894
+    ],
+    [
+     "3 ONZ",
+     7576
+    ],
+    [
+     "1 PACKAGE",
+     6891
+    ],
+    [
+     "1 BOTTLE",
+     5927
+    ],
+    [
+     "1 bar",
+     5893
+    ],
+    [
+     "1 PIECE",
+     5456
+    ],
+    [
+     "1 CAN",
+     5370
+    ],
+    [
+     "3/4 cup",
+     5036
+    ]
+   ]
+  },
+  "branded_food_category": {
+   "empty": 10630,
+   "empty_pct": 0.536,
+   "distinct": 447,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 27,
+   "double_spaces": 32066,
+   "html_like": 0,
+   "all_uppercase_values": 0,
+   "max_len": 700,
+   "top_values": [
+    [
+     "Popcorn, Peanuts, Seeds & Related Snacks",
+     92148
+    ],
+    [
+     "Candy",
+     88871
+    ],
+    [
+     "Cheese",
+     81283
+    ],
+    [
+     "Ice Cream & Frozen Yogurt",
+     60793
+    ],
+    [
+     "Cookies & Biscuits",
+     53574
+    ],
+    [
+     "Chips, Pretzels & Snacks",
+     50996
+    ],
+    [
+     "Breads & Buns",
+     47233
+    ],
+    [
+     "Pickles, Olives, Peppers & Relishes",
+     44432
+    ],
+    [
+     "Chocolate",
+     41507
+    ],
+    [
+     "Fruit & Vegetable Juice, Nectars & Fruit Drinks",
+     41255
+    ],
+    [
+     "Snack, Energy & Granola Bars",
+     40136
+    ],
+    [
+     "Cakes, Cupcakes, Snack Cakes",
+     38176
+    ],
+    [
+     "Cereal",
+     36800
+    ],
+    [
+     "Yogurt",
+     36729
+    ],
+    [
+     "Seasoning Mixes, Salts, Marinades & Tenderizers",
+     34319
+    ],
+    [
+     "Soda",
+     32978
+    ],
+    [
+     "Other Snacks",
+     31912
+    ],
+    [
+     "Pasta by Shape & Type",
+     31275
+    ],
+    [
+     "Dips & Salsa",
+     30462
+    ],
+    [
+     "Ketchup, Mustard, BBQ & Cheese Sauce",
+     29521
+    ],
+    [
+     "Salad Dressing & Mayonnaise",
+     27670
+    ],
+    [
+     "Wholesome Snacks",
+     27014
+    ],
+    [
+     "Frozen Dinners & Entrees",
+     26485
+    ],
+    [
+     "Water",
+     26436
+    ],
+    [
+     "Pre-Packaged Fruit & Vegetables",
+     26280
+    ]
+   ]
+  },
+  "data_source": {
+   "empty": 0,
+   "empty_pct": 0.0,
+   "distinct": 3,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 1981655,
+   "max_len": 6,
+   "top_values": [
+    [
+     "LI",
+     1846123
+    ],
+    [
+     "GDSN",
+     134415
+    ],
+    [
+     "NZGDSN",
+     1117
+    ]
+   ]
+  },
+  "package_weight": {
+   "empty": 1138188,
+   "empty_pct": 57.436,
+   "distinct": 32891,
+   "suspicious_placeholders": {
+    "none": 7
+   },
+   "edge_whitespace": 1168,
+   "double_spaces": 4,
+   "html_like": 0,
+   "all_uppercase_values": 117404,
+   "max_len": 30,
+   "top_values": [
+    [
+     "12 oz/340 g",
+     22733
+    ],
+    [
+     "16 oz/1 lbs/454 g",
+     16860
+    ],
+    [
+     "8 oz/227 g",
+     13334
+    ],
+    [
+     "6 oz/170 g",
+     12428
+    ],
+    [
+     "10 oz/283 g",
+     10576
+    ],
+    [
+     "8 oz/226 g",
+     9350
+    ],
+    [
+     "15 oz/425 g",
+     8928
+    ],
+    [
+     "32 oz/2 lbs/907 g",
+     8316
+    ],
+    [
+     "24 oz/680 g",
+     8045
+    ],
+    [
+     "7 oz/198 g",
+     7389
+    ],
+    [
+     "9 oz/255 g",
+     7277
+    ],
+    [
+     "12 fl oz/355 mL",
+     6643
+    ],
+    [
+     "16 oz/1 lbs/453 g",
+     6542
+    ],
+    [
+     "4 oz/113 g",
+     6438
+    ],
+    [
+     "5 oz/142 g",
+     5776
+    ],
+    [
+     "16 oz/454 g",
+     5560
+    ],
+    [
+     "14 oz/397 g",
+     5323
+    ],
+    [
+     "10 oz/284 g",
+     4938
+    ],
+    [
+     "3 oz/85 g",
+     4833
+    ],
+    [
+     "5.3 oz/150 g",
+     4546
+    ],
+    [
+     "18 oz/510 g",
+     4535
+    ],
+    [
+     "20 oz/567 g",
+     4407
+    ],
+    [
+     "32 fl oz/1 Quart/946 mL",
+     4082
+    ],
+    [
+     "10 LBR",
+     4056
+    ],
+    [
+     "16 fl oz/1 PT/473 mL",
+     4021
+    ]
+   ]
+  },
+  "modified_date": {
+   "empty": 20,
+   "empty_pct": 0.001,
+   "distinct": 2685,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 0,
+   "max_len": 10,
+   "min": null,
+   "max": null,
+   "unparsable": 1981635,
+   "unparsable_example": "2020-10-02"
+  },
+  "available_date": {
+   "empty": 0,
+   "empty_pct": 0.0,
+   "distinct": 58,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 0,
+   "max_len": 10,
+   "min": null,
+   "max": null,
+   "unparsable": 1981655,
+   "unparsable_example": "2020-11-13"
+  },
+  "market_country": {
+   "empty": 0,
+   "empty_pct": 0.0,
+   "distinct": 2,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 0,
+   "max_len": 13,
+   "top_values": [
+    [
+     "United States",
+     1980538
+    ],
+    [
+     "New Zealand",
+     1117
+    ]
+   ]
+  },
+  "discontinued_date": {
+   "empty": 1978470,
+   "empty_pct": 99.839,
+   "distinct": 239,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 0,
+   "max_len": 10,
+   "min": null,
+   "max": null,
+   "unparsable": 3185,
+   "unparsable_example": "2021-08-01"
+  },
+  "preparation_state_code": {
+   "empty": 1903557,
+   "empty_pct": 96.059,
+   "distinct": 25,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 78098,
+   "max_len": 14,
+   "top_values": [
+    [
+     "UNPREPARED",
+     55305
+    ],
+    [
+     "PREPARED",
+     8420
+    ],
+    [
+     "READY_TO_EAT",
+     6689
+    ],
+    [
+     "READY_TO_DRINK",
+     3666
+    ],
+    [
+     "MICROWAVE",
+     1190
+    ],
+    [
+     "BAKE",
+     1108
+    ],
+    [
+     "HEAT_AND_SERVE",
+     883
+    ],
+    [
+     "THAW",
+     403
+    ],
+    [
+     "FREEZE",
+     110
+    ],
+    [
+     "GRILL",
+     99
+    ],
+    [
+     "CONVECTION",
+     41
+    ],
+    [
+     "UNSPECIFIED",
+     34
+    ],
+    [
+     "BOIL",
+     21
+    ],
+    [
+     "STEAM",
+     21
+    ],
+    [
+     "FRY",
+     21
+    ],
+    [
+     "PAN_FRY",
+     19
+    ],
+    [
+     "SIMMER",
+     13
+    ],
+    [
+     "DEEP_FRY",
+     12
+    ],
+    [
+     "DRY",
+     12
+    ],
+    [
+     "ROAST",
+     11
+    ],
+    [
+     "SAUTE",
+     6
+    ],
+    [
+     "REFRIGERATE",
+     6
+    ],
+    [
+     "STIR_FRY",
+     4
+    ],
+    [
+     "RECONSTITUTE",
+     2
+    ],
+    [
+     "BAIN_MARIE",
+     2
+    ]
+   ]
+  },
+  "trade_channel": {
+   "empty": 1948901,
+   "empty_pct": 98.347,
+   "distinct": 142,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 32754,
+   "max_len": 130,
+   "top_values": [
+    [
+     "[\"GROCERY\"]",
+     12606
+    ],
+    [
+     "[\"CHILD_NUTRITION_FOOD_PROGRAMS\"]",
+     10743
+    ],
+    [
+     "[\"FOOD_SERVICE\"]",
+     1272
+    ],
+    [
+     "[\"CHILD_NUTRITION_FOOD_PROGRAMS\",\"GROCERY\"]",
+     1013
+    ],
+    [
+     "[\"GROCERY\",\"CHILD_NUTRITION_FOOD_PROGRAMS\"]",
+     816
+    ],
+    [
+     "[\"GROCERY\",\"ONLINE\"]",
+     785
+    ],
+    [
+     "[\"CHILD_NUTRITION_FOOD_PROGRAMS\",\"FOOD_SERVICE\",\"ONLINE\"]",
+     736
+    ],
+    [
+     "[\"FOOD_SERVICE\",\"GROCERY\"]",
+     588
+    ],
+    [
+     "[\"CHILD_NUTRITION_FOOD_PROGRAMS\",\"FOOD_SERVICE\",\"GROCERY\"]",
+     545
+    ],
+    [
+     "[\"FOOD_SERVICE\",\"ONLINE\"]",
+     353
+    ],
+    [
+     "[\"CHILD_NUTRITION_FOOD_PROGRAMS\",\"FOOD_SERVICE\"]",
+     328
+    ],
+    [
+     "[\"CHILD_NUTRITION_FOOD_PROGRAMS\",\"CHILD_NUTRITION_FOOD_PROGRAMS\"]",
+     234
+    ],
+    [
+     "[\"FOOD_SERVICE\",\"GROCERY\",\"ONLINE\"]",
+     224
+    ],
+    [
+     "[\"CONVENIENCE\",\"FOOD_SERVICE\",\"GROCERY\",\"ONLINE\"]",
+     209
+    ],
+    [
+     "[\"FOOD_SERVICE\",\"CHILD_NUTRITION_FOOD_PROGRAMS\"]",
+     192
+    ],
+    [
+     "[\"ONLINE\",\"GROCERY\"]",
+     163
+    ],
+    [
+     "[\"CONVENIENCE\",\"FOOD_SERVICE\",\"GROCERY\",\"ONLINE\",\"VENDING\"]",
+     137
+    ],
+    [
+     "[\"ONLINE\",\"FOOD_SERVICE\"]",
+     88
+    ],
+    [
+     "[\"CONVENIENCE\",\"ONLINE\"]",
+     85
+    ],
+    [
+     "[\"CONVENIENCE\",\"DRUG\",\"FOOD_SERVICE\",\"GROCERY\",\"ONLINE\",\"VENDING\"]",
+     83
+    ],
+    [
+     "[\"CONVENIENCE\",\"FOOD_SERVICE\",\"ONLINE\",\"VENDING\"]",
+     73
+    ],
+    [
+     "[\"CONVENIENCE\",\"FOOD_SERVICE\",\"ONLINE\"]",
+     71
+    ],
+    [
+     "[\"CONVENIENCE\",\"FOOD_SERVICE\",\"GROCERY\",\"MASS_MERCHANDISING\",\"ONLINE\"]",
+     62
+    ],
+    [
+     "[\"MASS_MERCHANDISING\",\"ONLINE\"]",
+     54
+    ],
+    [
+     "[\"CONVENIENCE\",\"GROCERY\",\"ONLINE\"]",
+     50
+    ]
+   ]
+  },
+  "short_description": {
+   "empty": 1903467,
+   "empty_pct": 96.054,
+   "distinct": 14747,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 373,
+   "double_spaces": 578,
+   "html_like": 0,
+   "all_uppercase_values": 33372,
+   "max_len": 37
+  },
+  "material_code": {
+   "empty": 1980332,
+   "empty_pct": 99.933,
+   "distinct": 51,
+   "suspicious_placeholders": {},
+   "edge_whitespace": 0,
+   "double_spaces": 0,
+   "html_like": 0,
+   "all_uppercase_values": 0,
+   "max_len": 10
+  }
+ }
+}

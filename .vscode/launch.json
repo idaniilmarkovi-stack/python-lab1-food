@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Очистка отладочного среза",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "src.pipeline",
+      "args": ["--mode", "debug", "--stage", "clean"],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
