@@ -1,0 +1,16 @@
+step,processed,changed,removed,note
+join_food,1981655,0,0,пропущено: нет food.csv
+normalize_column_names,1981655,0,0,переименовано столбцов: 0
+cast_types,1981655,0,0,типы приведены к config.SCHEMA
+replace_hidden_missing,1981655,1538,0,"ячеек заменено на NA: {""brand_name"": 465, ""subbrand_name"": 3, ""ingredients"": 6, ""household_serving_fulltext"": 789, ""package_weight"": 7, ""serving_size<=0"": 268}"
+analyze_missing,1981655,0,0,пропуски не удаляются и не заполняются (см. отчёт)
+normalize_gtin,1981655,1845102,0,некорректных кодов: 120
+drop_duplicates,1981655,1539056,0,полных повторов: 0; повторов fdc_id: 0; прежних версий gtin: 1539056 (flag)
+normalize_categories,1981655,361902,0,"{""brand_owner"": 92880, ""brand_name"": 26151, ""subbrand_name"": 285, ""branded_food_category"": 32093, ""household_serving_fulltext"": 4317, ""package_weight"": 1172, ""short_description"": 952, ""serving_size_unit"": 204052}; редких категорий (<100): 253 -> группа Other"
+parse_trade_channel,1981655,32754,0,JSON-список -> 'A|B' без повторов
+clean_text,1981655,35751,0,"{""ingredients"": 35344, ""not_a_significant_source_of"": 407}"
+add_missing_flags,1981655,550046,0,добавлено флагов: 4
+normalize_units,1981655,7615,0,"serving_size_std задан у 1958687 строк; package_weight_g у 519666, package_weight_ml у 83224; нулевых значений заменено на NA: вес/объём 9, порция 41"
+check_domain,1981655,2992,0,даты в будущем->NaT: {}; discontinued<available: 2992; отрицательных порций: 0
+flag_outliers,1981655,133383,0,"IQR=79135, MAD=133383, оба=79135, неправдоподобных (> 5000)=20"
+finalize,1981655,0,0,столбцов: 36

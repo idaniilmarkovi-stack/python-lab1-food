@@ -1,0 +1,35 @@
+{
+ "rows": {
+  "data_sources": 3,
+  "countries": 2,
+  "serving_units": 5,
+  "prep_states": 25,
+  "brand_owners": 36285,
+  "brands": 35745,
+  "subbrands": 8293,
+  "food_categories": 447,
+  "trade_channels": 13,
+  "branded_foods": 1981655,
+  "food_trade_channels": 46335
+ },
+ "load_batch_insert_s": 20.675,
+ "batch_size": 10000,
+ "fk_violations": 0,
+ "integrity_check": "ok",
+ "queries": {
+  "count_s": 0.54603,
+  "aggregate_s": 1.860149,
+  "date_range_no_index_s": 0.811345,
+  "date_range_with_index_s": 0.004943
+ },
+ "check": {
+  "count": 1981655,
+  "date_range": 119604,
+  "aggregate_groups": 447
+ },
+ "plan_date_range": [
+  "(3, 0, 154, 'SEARCH branded_foods USING COVERING INDEX idx_foods_modified_date (modified_date>? AND modified_date<?)')"
+ ],
+ "size_mb": 874.562,
+ "sqlite_version": "3.53.1"
+}
