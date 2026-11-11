@@ -1,0 +1,13 @@
+column,unique_share,unique
+brand_owner,0.09398,18796
+brand_name,5e-06,1
+gtin_upc,0.954635,190927
+ingredients,0.755335,151067
+serving_size_unit,1e-05,2
+household_serving_fulltext,0.04171,8342
+branded_food_category,0.000955,191
+data_source,1e-05,2
+package_weight,5e-06,1
+modified_date,0.003345,669
+available_date,1.5e-05,3
+market_country,5e-06,1

@@ -12,7 +12,6 @@
 import argparse
 import json
 import logging
-import os
 import platform
 import shutil
 import statistics
@@ -21,7 +20,6 @@ import sys
 import threading
 import time
 from importlib import metadata
-from pathlib import Path
 
 import pandas as pd
 
@@ -151,7 +149,7 @@ def bench_schema(mode: str = "full") -> pd.DataFrame:
         t_read = median_time(lambda: pd.read_parquet(path))
         df = pd.read_parquet(path)
         key = "branded_food_category"
-        t_grp = median_time(lambda: df.groupby(key, observed=True)["serving_size"].median())
+        t_grp = median_time(lambda d=df: d.groupby(key, observed=True)["serving_size"].median())
         prof = _profile(df, label)
         prof.to_csv(p["out"] / f"memory_by_column_{label}.csv", index=False, encoding="utf-8")
         stats[label] = dict(size_mb=path.stat().st_size / MB, mem_mb=float(df.memory_usage(deep=True).sum() / MB),

@@ -4,7 +4,6 @@
 """
 import sys
 
-import pandas as pd
 from pandas.testing import assert_frame_equal
 
 from . import io_utils as io

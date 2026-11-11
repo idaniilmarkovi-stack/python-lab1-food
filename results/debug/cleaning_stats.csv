@@ -10,7 +10,7 @@ normalize_categories,200000,3936,0,"{""brand_owner"": 3741, ""branded_food_categ
 parse_trade_channel,200000,0,0,JSON-список -> 'A|B' без повторов
 clean_text,200000,4610,0,"{""ingredients"": 4610, ""not_a_significant_source_of"": 0}"
 add_missing_flags,200000,199999,0,добавлено флагов: 4
-normalize_units,200000,0,0,"serving_size_std задан у 199996 строк; package_weight_g у 0, package_weight_ml у 0"
+normalize_units,200000,0,0,"serving_size_std задан у 199996 строк; package_weight_g у 0, package_weight_ml у 0; нулевых значений заменено на NA: вес/объём 0, порция 0"
 check_domain,200000,0,0,даты в будущем->NaT: {}; discontinued<available: 0; отрицательных порций: 0
 flag_outliers,200000,14697,0,"IQR=7251, MAD=14406, оба=6960, неправдоподобных (> 5000)=0"
 finalize,200000,0,0,столбцов: 36
