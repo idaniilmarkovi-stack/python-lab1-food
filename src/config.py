@@ -51,7 +51,7 @@ SCHEMA = {
     "preparation_state_code": "category",
     "trade_channel": "category",
     "short_description": "category",
-    "material_code": "category",
+    "material_code": STR,        # код: строка (иначе возможна потеря ведущих нулей)
 }
 DATE_COLS = [c for c, t in SCHEMA.items() if t == "datetime"]
 DATE_FORMAT = "%Y-%m-%d"
