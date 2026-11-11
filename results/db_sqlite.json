@@ -12,15 +12,15 @@
   "branded_foods": 1981655,
   "food_trade_channels": 46335
  },
- "load_batch_insert_s": 20.675,
+ "load_batch_insert_s": 17.654,
  "batch_size": 10000,
  "fk_violations": 0,
  "integrity_check": "ok",
  "queries": {
-  "count_s": 0.54603,
-  "aggregate_s": 1.860149,
-  "date_range_no_index_s": 0.811345,
-  "date_range_with_index_s": 0.004943
+  "count_s": 0.462057,
+  "aggregate_s": 1.602843,
+  "date_range_no_index_s": 0.750437,
+  "date_range_with_index_s": 0.004208
  },
  "check": {
   "count": 1981655,

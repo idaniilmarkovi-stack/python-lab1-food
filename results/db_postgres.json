@@ -14,15 +14,15 @@
  },
  "batch_size": 10000,
  "pg_version": "18.6",
- "load_batch_insert_s": 129.152,
- "size_after_insert_mb": 869.103,
- "load_copy_s": 88.988,
- "size_mb": 877.085,
+ "load_batch_insert_s": 123.032,
+ "size_after_insert_mb": 869.701,
+ "load_copy_s": 82.269,
+ "size_mb": 877.528,
  "queries": {
-  "count_s": 0.13792,
-  "aggregate_s": 0.2466,
-  "date_range_no_index_s": 0.157155,
-  "date_range_with_index_s": 0.164491
+  "count_s": 0.136964,
+  "aggregate_s": 0.25021,
+  "date_range_no_index_s": 0.158628,
+  "date_range_with_index_s": 0.16003
  },
  "check": {
   "count": 1981655,
@@ -30,11 +30,11 @@
   "aggregate_groups": 447
  },
  "plan_date_range": [
-  "('Finalize Aggregate  (cost=112523.82..112523.83 rows=1 width=8)',)",
-  "('  ->  Gather  (cost=112523.61..112523.82 rows=2 width=8)',)",
+  "('Finalize Aggregate  (cost=112505.48..112505.49 rows=1 width=8)',)",
+  "('  ->  Gather  (cost=112505.27..112505.48 rows=2 width=8)',)",
   "('        Workers Planned: 2',)",
-  "('        ->  Partial Aggregate  (cost=111523.61..111523.62 rows=1 width=8)',)",
-  "('              ->  Parallel Seq Scan on branded_foods  (cost=0.00..111397.92 rows=50275 width=0)',)",
+  "('        ->  Partial Aggregate  (cost=111505.27..111505.28 rows=1 width=8)',)",
+  "('              ->  Parallel Seq Scan on branded_foods  (cost=0.00..111377.49 rows=51112 width=0)',)",
   "(\"                    Filter: ((modified_date >= '2019-01-01'::date) AND (modified_date < '2019-07-01'::date))\",)"
  ]
 }
